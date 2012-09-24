@@ -14,11 +14,13 @@ import com.example.pages.HomePage;
 
 /**
  * @author Nishant Verma, mail me: nishuverma@gmail.com
- * Befor running these test make sure you run this command "adb forward tcp:8080 tcp:8080" and start WebDriver App on Android Device 
+ * Befor running these test make sure you run this command "adb forward tcp:8080 tcp:8080" and 
+ * start WebDriver App on Android Device 
  *
  */
 public class SearchFunctionality {
 	private WebDriver driver;
+	
 	
 	@Before
 	public void setUp() throws Exception {
@@ -45,9 +47,7 @@ public class SearchFunctionality {
 		assertTrue(resultOfSearch.getText().contains("Steve Jobs: The Exclusive Biography"));
 		WebElement buyNow = driver.findElements(By.tagName("INPUT")).get(2); 
 		buyNow.click();
-		assertTrue(driver.findElements(By.tagName("LABEL")).get(0).getText().contains("Shipping Destination Pincode:"));
-		assertTrue(driver.findElements(By.tagName("LABEL")).get(1).getText().contains("Reciever's Phone No.:"));
-		assertTrue(driver.findElements(By.tagName("LABEL")).get(2).getText().contains("Your Email ID:"));
+		assertTrue(driver.findElements(By.tagName("LABEL")).get(0).getText().contains("Email: (required)"));
 	}
 	
 	@After
