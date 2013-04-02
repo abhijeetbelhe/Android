@@ -4,7 +4,7 @@ If you are not looking for "Testing Web Application on Android using Android Dri
 
 This is a skeleton test framework built on Eclipse (Version 3.7) and Selenium Server Standalone (Version 2.15.0).
 
-Requirement to execute this:  Eclipse (version 3.7), JUnit, selenium-server-standalone-2.15.0.jar and of course Android SDK.
+Requirement to execute this:  Eclipse (version 3.7), JUnit, selenium-server-standalone-2.31.0.jar and of course Android SDK.
 
 Read how to install and create virtual device on Win 7 here:
 
